@@ -36,12 +36,6 @@
         },
         {
             "name": "pngquant",
-            "buildsystem": "simple",
-            "build-commands": [
-                "sh configure --prefix=/app",
-                "make",
-                "make install"
-            ],
             "sources": [
                 {
                     "type": "archive",
@@ -52,7 +46,6 @@
         },
         {
             "name": "curtail",
-            "builddir": true,
             "buildsystem": "meson",
             "sources": [
                 {
