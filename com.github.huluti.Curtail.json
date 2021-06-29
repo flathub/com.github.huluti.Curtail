@@ -65,6 +65,10 @@
                     "commit": "ba09dc65238b81f96849d003790c5e89fd5b4774"
                 }
             ]
+        },
+        {
+            "type": "patch",
+            "path": "fix-version0001.patch"
         }
     ]
 }
