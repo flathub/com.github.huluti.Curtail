@@ -1,7 +1,7 @@
 {
     "app-id": "com.github.huluti.Curtail",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "3.38",
+    "runtime-version": "40",
     "sdk": "org.gnome.Sdk",
     "command": "curtail",
     "finish-args": [
@@ -45,14 +45,24 @@
             ]
         },
         {
+            "name": "libwebp",
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://storage.googleapis.com/downloads.webmproject.org/releases/webp/libwebp-1.2.0.tar.gz",
+                    "sha256": "2fc8bbde9f97f2ab403c0224fb9ca62b2e6852cbc519e91ceaa7c153ffd88a0c"
+                }
+            ]
+        },
+        {
             "name": "curtail",
             "buildsystem": "meson",
             "sources": [
                 {
                     "type": "git",
                     "url": "https://github.com/Huluti/Curtail",
-                    "tag": "1.1.0",
-                    "commit": "18d48eb8d8ad82a579899be7ad6305734e8d120c"
+                    "tag": "1.2.0",
+                    "commit": "ba09dc65238b81f96849d003790c5e89fd5b4774"
                 }
             ]
         }
