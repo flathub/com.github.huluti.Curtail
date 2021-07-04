@@ -61,12 +61,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/Huluti/Curtail",
-                    "tag": "1.2.0",
-                    "commit": "ba09dc65238b81f96849d003790c5e89fd5b4774"
-                },
-                {
-                    "type": "patch",
-                    "path": "fix-version0001.patch"
+                    "tag": "1.2.1",
+                    "commit": "26c12b419124a54398ca9d7ca8f727b91dc0fc35"
                 }
             ]
         }
