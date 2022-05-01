@@ -1,7 +1,7 @@
 {
     "app-id": "com.github.huluti.Curtail",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "41",
+    "runtime-version": "42",
     "sdk": "org.gnome.Sdk",
     "command": "curtail",
     "finish-args": [
@@ -15,8 +15,8 @@
             "name":"jpegoptim",
             "sources":[{
                 "type": "archive",
-                "url": "https://github.com/tjko/jpegoptim/archive/RELEASE.1.4.6.tar.gz",
-                "sha256": "c44dcfac0a113c3bec13d0fc60faf57a0f9a31f88473ccad33ecdf210b4c0c52"
+                "url": "https://github.com/tjko/jpegoptim/archive/refs/tags/v1.4.7.tar.gz",
+                "sha256": "c52616f2fb8d481315871680f9943b0f58c553d1e0c49a6bd4691a3e66d7e6de"
             }]
         },
         {
@@ -39,8 +39,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://pngquant.org/pngquant-2.12.5-src.tar.gz",
-                    "sha256": "3638936cf6270eeeaabcee42e10768d78e4dc07cac9310307835c1f58b140808"
+                    "url": "http://pngquant.org/pngquant-2.17.0-src.tar.gz",
+                    "sha256": "a27cf0e64db499ccb3ddae9b36036e881f78293e46ec27a9e7a86a3802fcda66"
                 }
             ]
         },
@@ -49,8 +49,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://storage.googleapis.com/downloads.webmproject.org/releases/webp/libwebp-1.2.0.tar.gz",
-                    "sha256": "2fc8bbde9f97f2ab403c0224fb9ca62b2e6852cbc519e91ceaa7c153ffd88a0c"
+                    "url": "http://storage.googleapis.com/downloads.webmproject.org/releases/webp/libwebp-1.2.2.tar.gz",
+                    "sha256": "7656532f837af5f4cec3ff6bafe552c044dc39bf453587bd5b77450802f4aee6"
                 }
             ]
         },
@@ -61,8 +61,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/Huluti/Curtail",
-                    "tag": "1.2.2",
-                    "commit": "e7edf8de76b4f3e11a4525b6ef5e3281c1563b99"
+                    "tag": "1.3.0",
+                    "commit": "b43ccbdfa4c8b1101fcedf5b98209c7fa64baf25"
                 }
             ]
         }
