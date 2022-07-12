@@ -61,8 +61,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/Huluti/Curtail",
-                    "tag": "1.3.0",
-                    "commit": "b43ccbdfa4c8b1101fcedf5b98209c7fa64baf25"
+                    "tag": "1.3.1",
+                    "commit": "39b9269e819bc66985d9535a33f80a75cf1db341"
                 }
             ]
         }
