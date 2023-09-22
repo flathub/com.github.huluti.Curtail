@@ -58,20 +58,6 @@
                 }
             ]
         },
-        {
-            "name": "libwebp",
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://github.com/webmproject/libwebp/archive/refs/tags/v1.3.1.tar.gz",
-                    "sha256": "1c45f135a20c629c31cebcba62e2b399bae5d6e79851aa82ec6686acedcf6f65"
-                },
-                {
-                    "type": "patch",
-                    "path": "libwebp-cve-2023-4863.patch"
-                }
-            ]
-        },
         "python3-scour.json",
         {
             "name": "curtail",
