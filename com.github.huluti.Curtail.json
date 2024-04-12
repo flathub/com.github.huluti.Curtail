@@ -1,28 +1,27 @@
 {
-    "id": "com.github.huluti.Curtail",
-    "runtime": "org.gnome.Platform",
-    "runtime-version": "45",
-    "sdk": "org.gnome.Sdk",
-    "sdk-extensions": [
+    "id":"com.github.huluti.Curtail",
+    "runtime":"org.gnome.Platform",
+    "runtime-version":"46",
+    "sdk":"org.gnome.Sdk",
+    "sdk-extensions":[
         "org.freedesktop.Sdk.Extension.rust-stable"
     ],
-    "command": "curtail",
-    "finish-args": [
+    "command":"curtail",
+    "finish-args":[
         "--share=ipc",
         "--socket=fallback-x11",
         "--socket=wayland",
         "--device=dri",
-        "--filesystem=home",
-        "--env=GDK_PIXBUF_MODULE_FILE=/app/lib/gdk-pixbuf-2.0/2.10.0/loaders.cache"
+        "--filesystem=home"
     ],
-    "modules": [
+    "modules":[
         {
-            "name": "jpegoptim",
-            "sources": [
+            "name":"jpegoptim",
+            "sources":[
                 {
-                    "type": "archive",
-                    "url": "https://github.com/tjko/jpegoptim/archive/refs/tags/v1.5.5.tar.gz",
-                    "sha256": "90a309d1c092de358bb411d702281ac3039b489d03adb0bc3c4ef04cf0067d38"
+                    "type":"archive",
+                    "url":"https://github.com/tjko/jpegoptim/archive/refs/tags/v1.5.5.tar.gz",
+                    "sha256":"90a309d1c092de358bb411d702281ac3039b489d03adb0bc3c4ef04cf0067d38"
                 }
             ]
         },
@@ -35,58 +34,39 @@
             "cleanup": ["*"]
         },
         {
-            "name": "oxipng",
-            "buildsystem": "simple",
-            "build-commands": [
+            "name":"oxipng",
+            "buildsystem":"simple",
+            "build-commands":[
                 "cargo --offline fetch --manifest-path Cargo.toml --verbose",
                 "cargo --offline build --release --verbose",
                 "install -Dm 755 target/release/oxipng -t /app/bin"
             ],
-            "build-options": {
-				"append-path": "/usr/lib/sdk/rust-stable/bin",
-				"env": {
-				    "CARGO_HOME": "/run/build/oxipng/cargo"
-				}
-			},
-            "sources": [
+            "build-options":{
+                "append-path":"/usr/lib/sdk/rust-stable/bin",
+                "env":{
+                    "CARGO_HOME":"/run/build/oxipng/cargo"
+                }
+            },
+            "sources":[
                 {
-                    "type": "archive",
-                    "url": "https://github.com/shssoichiro/oxipng/archive/refs/tags/v9.0.0.tar.gz",
-                    "sha256": "534fa8f349f52b01c2ee4332cef25ce1311edca04209ac6d972e38b171550a1b"
+                    "type":"archive",
+                    "url":"https://github.com/shssoichiro/oxipng/archive/refs/tags/v9.0.0.tar.gz",
+                    "sha256":"534fa8f349f52b01c2ee4332cef25ce1311edca04209ac6d972e38b171550a1b"
                 },
                 "oxipng-sources.json"
             ]
         },
         {
-            "name": "pngquant",
-            "sources": [
+            "name":"pngquant",
+            "sources":[
                 {
-                    "type": "archive",
-                    "url": "http://pngquant.org/pngquant-2.18.0-src.tar.gz",
-                    "sha256": "e72194b52b36f040deaec49a1ddd5dcd8d4feecc3a5fe6c5e9589a9707b233d4"
+                    "type":"archive",
+                    "url":"http://pngquant.org/pngquant-2.18.0-src.tar.gz",
+                    "sha256":"e72194b52b36f040deaec49a1ddd5dcd8d4feecc3a5fe6c5e9589a9707b233d4"
                 }
             ]
         },
         "python3-scour.json",
-        {
-            "name": "webp-pixbuf-loader",
-            "buildsystem": "meson",
-            "config-opts":[
-                "-Dgdk_pixbuf_moduledir=/app/lib/gdk-pixbuf-2.0/2.10.0/loaders/"
-            ],
-            "sources": [
-                {
-                    "type": "git",
-                    "url": "https://github.com/aruiz/webp-pixbuf-loader.git",
-                    "tag": "0.2.4",
-                    "commit": "a35014104a226265e44fe30fcdb4df9305af3466"
-                }
-            ],
-            "post-install": [
-                "GDK_PIXBUF_MODULEDIR=/app/lib/gdk-pixbuf-2.0/2.10.0/loaders/ gdk-pixbuf-query-loaders > /app/lib/gdk-pixbuf-2.0/2.10.0/loaders.cache",
-                "gdk-pixbuf-query-loaders >> /app/lib/gdk-pixbuf-2.0/2.10.0/loaders.cache"
-            ]
-        },
         {
             "name": "curtail",
             "buildsystem": "meson",
@@ -94,8 +74,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/Huluti/Curtail",
-                    "tag": "1.8.0",
-                    "commit": "4a62b4e31c0d3630f99b0c2fb5e457104f1da573"
+                    "tag": "1.9.0",
+                    "commit": "f70234aabbe9d37ca6c2be82b6033bde4fe68a5e"
                 }
             ]
         }
