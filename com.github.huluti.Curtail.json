@@ -1,7 +1,7 @@
 {
     "id":"com.github.huluti.Curtail",
     "runtime":"org.gnome.Platform",
-    "runtime-version":"46",
+    "runtime-version":"47",
     "sdk":"org.gnome.Sdk",
     "sdk-extensions":[
         "org.freedesktop.Sdk.Extension.rust-stable"
@@ -74,8 +74,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/Huluti/Curtail",
-                    "tag": "1.10.0",
-                    "commit": "e8585466ada792fdb685891609a2665cd893d0c7"
+                    "tag": "1.11.0",
+                    "commit": "8e8ac10783697bf22967a80f44e3fff73856aa17"
                 }
             ]
         }
