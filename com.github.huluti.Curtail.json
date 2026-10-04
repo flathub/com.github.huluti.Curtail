@@ -1,7 +1,7 @@
 {
     "id": "com.github.huluti.Curtail",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "50",
+    "runtime-version": "51",
     "sdk": "org.gnome.Sdk",
     "sdk-extensions": [
         "org.freedesktop.Sdk.Extension.rust-stable"
@@ -63,8 +63,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/shssoichiro/oxipng/archive/refs/tags/v10.1.1.tar.gz",
-                    "sha256": "ce19b1f060d586ceb3ea682f27d00e41675ec4093d8ac200a61ccd9d967d0999",
+                    "url": "https://github.com/shssoichiro/oxipng/archive/refs/tags/v10.2.1.tar.gz",
+                    "sha256": "460ccfcdcc9c3877b9f7fae1dfd4f2a3f93d3b2a2af3e3b62ca32b163f923cca",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 209796,
@@ -110,8 +110,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/Huluti/Curtail",
-                    "tag": "1.16.2",
-                    "commit": "1995a665d893f847a8e7346665dfe8a17552e269"
+                    "tag": "1.17.0",
+                    "commit": "9d2df3541f4d10826d434c7d93c35d2c7a98cbd9"
                 }
             ]
         }
